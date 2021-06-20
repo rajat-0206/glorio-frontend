@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+## Parking Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project made by <a href="https://itsrajat.xyz">Rajat Shrivastava</a>
 
-## Available Scripts
+<br>
+<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
 
-In the project directory, you can run:
+<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
 
-### `npm start`
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node-dot-js&logoColor=white" />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" />
 
-### `npm test`
+<br />
+An react based application to book the slot to park the car. Park car in any building with slot available. Easily unpark/free the car and charges will be deducted from your balance. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Screenshot (s)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="https://i.ibb.co/VCr6bds/dashboard.jpg" alt="dashboard" border="0">
+<center>Dashboard</center>
+<br />
+<img src="https://i.ibb.co/PWYTqv1/history.jpg" alt="history" border="0">
+<center>History</center>
+<br />
+<img src="https://i.ibb.co/sq3VXH7/login.jpg" alt="login" border="0">
+<center>Login</center>
+<br />
+<img src="https://i.ibb.co/wBkBqGM/signup.jpg" alt="signup" border="0">
+<center>Signup</center>
 
-### `npm run eject`
+<img src="https://i.ibb.co/Hr8qcRy/add-money.jpg" alt="add-money" border="0">
+<center>Add Balance</center>
+<br />
+<img src="https://i.ibb.co/LR8PB5L/parkcar.jpg" alt="parkcar" border="0">
+<center>Park car at free slot</center>
+<br />
+<img src="https://i.ibb.co/PQ7cjJ3/unparkcar.jpg" alt="unparkcar" border="0">
+<center>Unpark car you parked</center>
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation and Setup Instructions
+<ol>
+<li> Clone down this repository using following command.</li>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+git clone https://github.com/rajat-0206/glorio-frontend
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<li> You will need `node` and `npm` installed globally on your machine.  Install it from <a href="https://node.org/downloads">here</a>.</li>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<li> Install the required package using following command.</li>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm install
+``` 
 
-### Code Splitting
+5. Start server using following command
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+npm start 
+```
+5. Visit the following url to browse web app.
 
-### Analyzing the Bundle Size
+`localhost:3000`  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Functionalties
 
-### Making a Progressive Web App
+  - Register
+  - Login
+  - Verify mail-id through email
+  - Add Money
+  - Park Car
+  - Unpark Car
+  - View History
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Flow of Control
+ - First of all user will create his account. Emailid, password and name is required to create a account.
+ - Password should be 8 letters long and should include a capital letter, a small letter, a special symbol and a number.
+ - A mail is sent to the registered mail. User need to click on the link in order to verify his/her email. Login can be done after verification.
+ - User can login with his/her credentials
+ - User can add money to his wallet.
+ - User can park his/her car at any avilable slot.
+ - User will be shown all the slots available building wise. The slots which are already parked at shown with red and those which are free are in green.
+ - User can unpark/free only his/her car.
+ - User can see parking history. History will show the arrival time, the departure time and the charges of parking.
