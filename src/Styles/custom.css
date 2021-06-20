@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
+
+.container {
+    width:50%;
+    padding:30px 40px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:rgba(0,0,0,0.5);
+    color:white !important;
+    border-radius: 20px;
+}
+
+.container label {
+    color:white !important;
+}
+
+.coverBody {
+    background: url('https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=3200');
+    background-size: cover,contain;
+    background-position: center;
+    height: 100%;
+    width:100%;
+    position: fixed;
+}
+
+.heading {
+    color:white;
+    font-size: 36px;
+    font-weight: bolder;
+    letter-spacing:3px;
+    user-select: none;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.companyName{
+    color:white;
+    font-size:24px;
+    margin:0px;
+    user-select: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.actionBtn {
+    margin:0px 5px;
+}
+.error {
+
+    color:red;
+    font-size: 20px;
+    margin:0px auto;
+    margin-top:10px;
+}
+
+.mainsec{
+    height:calc(100vh - 120px) !important;
+}
+
+.slotbatch{
+    height:50px;
+    width:50px;
+    cursor: pointer;
+    margin:10px !important;
+    padding:5px;
+
+}
+.slotbatch:hover{
+    transform: scale(1.1);
+
+}
+
+.buildingCard {
+    height: 300px;
+    overflow-y: auto;
+}
+
+
+.buildingCard::-webkit-scrollbar{
+    width:5px;
+}
+
+.buildingCard::-webkit-scrollbar-thumb{
+    width:5px;
+    color:#333;
+    background-color: #333;
+}
+
+.displayMiddle {
+    position:absolute !important;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.centerText {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:991px) {
+    .container{
+        width:100%;   
+     }
+
+     .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+    }
+}
