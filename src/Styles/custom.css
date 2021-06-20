@@ -70,6 +70,7 @@
     cursor: pointer;
     margin:10px !important;
     padding:5px;
+    user-select: none;
 
 }
 .slotbatch:hover{
@@ -109,13 +110,20 @@
 
 
 @media screen and (max-width:991px) {
+
+    .companyName {
+        display: none;
+    }
     .container{
         width:100%;   
      }
+     .navbar{
+         flex-direction: column;
+     }
 
-     .navbar {
-        display: flex;
-        flex-direction: column;
+     .topnavbar {
+        display: flex ;
+        flex-direction: row !important;
         width: 100%; 
     }
 }

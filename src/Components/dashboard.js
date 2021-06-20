@@ -18,6 +18,11 @@ const Dashboard = () => {
     let [Username,setname] = useState(null)
     let [balance,setbalance] = useState(null)
 
+    const userBalance = {
+        balance: balance,
+        setbalance
+      };
+
 
     const getData = async () => {
         if(loading){
@@ -80,8 +85,9 @@ const Dashboard = () => {
     }
     
     let mainlayout = (
+        <AppContext.Provider value={userBalance}>
         <Layout>
-            <Header className="navbar" style={{ position: 'fixed', zIndex: 1, width: '100%', height: "65px" }}>
+            <Header className="navbar topnavbar" style={{ position: 'fixed', zIndex: 1, width: '100%', height: "65px" }}>
                 <span className="companyName">Car Paking System</span>
                 <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
                     <Menu.Item key="1" onClick={showHome}><HomeOutlined /> Home</Menu.Item>
@@ -107,7 +113,7 @@ const Dashboard = () => {
                     </Col>
                 </div>
                 <Divider />
-                {homeVisible? <HomePage  />:<HistoryPage/>}
+                {homeVisible? <HomePage />:<HistoryPage/>}
                
                 
                 <Modal title="Add Balance" visible={isModalVisible} onOk={onFinish} onCancel={handleCancel}>
@@ -135,6 +141,7 @@ const Dashboard = () => {
             </Content>
             <Footer style={{ textAlign: 'center', height: "40px" }}>©2021 Created by Rajat Shrivastava</Footer>
         </Layout>
+        </AppContext.Provider>
     )
     getData()
     return  (<div>{loading ?  <Spin size="large" className="displayMiddle" /> : mainlayout}</div>)
